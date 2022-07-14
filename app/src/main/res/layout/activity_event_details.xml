@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/createevent_background"
+    tools:context=".EventDetails">
+
+    <ImageButton
+        android:id="@+id/userBut4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:onClick="gotoProfilePage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createBut"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/user"
+        tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/settingBut5"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:onClick="gotoSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toEndOf="@+id/userBut"
+        app:layout_constraintTop_toBottomOf="@+id/createBut"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/settings"
+        tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/homeBut2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:onClick="gotoHomescreen"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/userBut"
+
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createBut"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/home"
+        tools:ignore="OnClick,SpeakableTextPresentCheck,UnknownIdInLayout" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="209dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="35dp"
+        android:paddingStart="20dp"
+        android:text="Event Details"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Event Name"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Scheduled event's name"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:text="@+id/eventnameInput" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Date"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Date of the reminder"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:text="@+id/eventdateInput" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Time"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:hint="Time of the reminder"
+            android:layout_marginBottom="20dp"
+            android:textSize="18dp"
+            android:text="@+id/eventtimeInput" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

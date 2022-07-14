@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_attendees_background"
+    tools:context=".SelectAttendees">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="89dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="509dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:clipToPadding="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item_contact" />
+
+        <ImageButton
+            android:id="@+id/selectBut"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="120dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="gotoCreateEvent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/tickmark"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/homeBut"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:onClick="gotoHomescreen"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/userBut"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/home"
+        tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/userBut"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:onClick="gotoProfilePage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/ic_user"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/settingBut"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toEndOf="@+id/userBut"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/settings"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/select_attendees"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Select Attendees"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textColor="#495057"-->
+    <!--        android:textSize="30dp"-->
+    <!--        tools:layout_editor_absoluteX="37dp"-->
+    <!--        tools:layout_editor_absoluteY="120dp"-->
+    <!--        android:width="257dp"-->
+    <!--        android:height="39dp"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/selectAttendeeText"
+        android:layout_width="fill_parent"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="120dp"
+
+        android:text="Select Attendees"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

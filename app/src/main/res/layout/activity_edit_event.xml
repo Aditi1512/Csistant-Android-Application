@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/createevent_background"
+    tools:context=".EditEvent">
+
+    <TextView
+        android:id="@+id/createEventText"
+        android:layout_width="257dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="104dp"
+        android:text="Edit Event"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/eventnameInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <EditText
+        android:id="@+id/eventnameInput"
+        android:layout_width="262dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<TextView
+        android:id="@+id/meetingtypeInput"
+        android:layout_width="262dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_input"
+        android:hint="Select Meeting Type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionInput" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/eventtimeInput"-->
+<!--        android:layout_width="128dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:layout_marginEnd="64dp"-->
+<!--        android:background="@drawable/custom_input"-->
+<!--        android:drawableEnd="@drawable/ic_clock"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Time"-->
+<!--        android:inputType="time"-->
+<!--        android:onClick="showTimePickerDialog"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:paddingRight="10dp"-->
+<!--        android:textColor="@color/grey"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/descriptionInput"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/eventnameInput"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        tools:ignore="OnClick" />-->
+
+    <Button
+        android:id="@+id/eventtimeInput"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/ic_clock"
+        android:ems="10"
+        android:hint="Time"
+        android:textColorHint="@color/white"
+        android:inputType="time"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventnameInput"
+        android:layout_marginRight="64dp"
+        android:drawableRight="@drawable/ic_clock" />
+
+    <Button
+        android:id="@+id/eventdateInput"
+        android:layout_width="124dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/eventtimeInput"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventnameInput"
+        android:drawableRight="@drawable/ic_calendar" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/eventdateInput"-->
+<!--        android:layout_width="124dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:background="@drawable/custom_input"-->
+<!--        android:drawableEnd="@drawable/ic_calendar"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Date"-->
+<!--        android:inputType="date"-->
+<!--        android:onClick="showDatePickerDialog"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:paddingRight="10dp"-->
+<!--        android:textColor="@color/grey"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/descriptionInput"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/eventtimeInput"-->
+<!--        app:layout_constraintHorizontal_bias="0.844"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/eventnameInput"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        tools:ignore="OnClick" />-->
+
+    <TextView
+        android:id="@+id/descriptionInput"
+        android:layout_width="262dp"
+        android:layout_height="48dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Description"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/grey"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/meeting_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventnameInput"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <Spinner
+        android:id="@+id/meeting_type"
+        android:layout_width="262dp"
+        android:layout_height="48dp"
+        android:background="@drawable/custom_input"
+        android:dropDownSelector="@drawable/ic_dropdown"
+        android:hint="Select Meeting Type"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/selectattendeesBut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventnameInput"
+        app:layout_constraintVertical_bias="0.933"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/selectattendeesBut"
+        android:layout_width="262dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="392dp"
+        android:background="@drawable/custon_buttondarkborder"
+        android:text="Select Attendees"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/message_spinner"
+        android:layout_width="261dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectattendeesBut"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="105dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/custom_buttondark"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFFFF"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/message_spinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="105dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_buttondark"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_spinner" />
+
+    <ImageButton
+        android:id="@+id/homeBut"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:onClick="gotoHomescreen"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/userBut"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/home"
+        tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addRemBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:onClick="gotoEditEvent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_edit"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="320dp"
+        tools:layout_editor_absoluteY="640dp" />
+
+    <ImageButton
+        android:id="@+id/userBut"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/user"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/settingBut"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toEndOf="@+id/userBut"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/settings"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="52dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/settingBut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toEndOf="@+id/createEventText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154"
+        app:srcCompat="@drawable/ic_delete"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
